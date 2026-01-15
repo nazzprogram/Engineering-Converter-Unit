@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Engineering Converter Unit</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>⚙️ Engineering Converter Unit</h1>
-    <p>Convert Length, Mass, and Temperature with Precision</p>
+    <p>Convert Length, Mass, Temperature, Force & Power with precision</p>
   </header>
 
   <main>
-    <section class="converter">
+    <section class="converter-box">
+      <h2>Unit Converter</h2>
+
       <label for="conversionType">Conversion Type:</label>
       <select id="conversionType">
         <option value="length">Length</option>
         <option value="mass">Mass</option>
         <option value="temperature">Temperature</option>
+        <option value="force">Force</option>
+        <option value="power">Power</option>
       </select>
 
-      <div class="input-group">
-        <input type="number" id="inputValue" placeholder="Enter value" />
-        <select id="fromUnit"></select>
-        <span>→</span>
-        <select id="toUnit"></select>
-      </div>
+      <label for="fromUnit">From Unit:</label>
+      <select id="fromUnit"></select>
 
-      <button id="convertBtn">Convert</button>
-      <p id="result"></p>
+      <label for="toUnit">To Unit:</label>
+      <select id="toUnit"></select>
+
+      <label for="value">Value:</label>
+      <input type="number" id="value" placeholder="Enter value">
+
+      <button onclick="convert()">Convert</button>
+
+      <div class="result" id="result"></div>
     </section>
 
-    <section class="history">
-      <h2>📌 Frequently Used Conversions</h2>
-      <ul id="historyList"></ul>
+    <section class="history-box">
+      <h2>🔖 Frequently Used Conversions</h2>
+      <ul id="history"></ul>
     </section>
   </main>
 
   <footer>
-    <p>Made for Engineers • Malaysia 🇲🇾</p>
+    <p>Designed with ⚡ Engineering Spirit | Nazirul’s Project</p>
   </footer>
 
   <script src="script.js"></script>
