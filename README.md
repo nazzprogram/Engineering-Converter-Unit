@@ -20,7 +20,13 @@ It also saves frequently used conversions for easy reference.
 
 ---
 
-## 📂 Project Structure | File | Ikon | Fungsi Utama | Penerangan Ringkas | |-------------|------|--------------|--------------------| | `index.html` | 📄 | UI & Struktur | Halaman utama landing page, susun elemen converter | | `style.css` | 🎨 | Rekabentuk | Styling dengan tema bold, modern, colorful engineering | | `script.js` | ⚡ | Logik | Fungsi penukaran unit, input validation & simpan history | | `README.md` | 📘 | Dokumentasi | Panduan projek, cara guna, struktur & maklumat tambahan |
+## 📂 Project Structure 
+| 📁 File / Folder | 🛠️ Fungsi Utama | 📝 Penerangan Ringkas |
+|------------------|-----------------|-----------------------|
+| `index.html` | UI & Struktur | Halaman utama landing page, susun elemen converter dan layout keseluruhan |
+| `style.css`  | Rekabentuk | Styling dengan tema bold, modern, colorful engineering design | 
+| `script.js`  | Logik | Fungsi penukaran unit, input validation, dan simpan frequently used conversions | 
+| `README.md`  | Dokumentasi | Panduan projek, cara guna, struktur, design concept & future improvements |
 
 ---
 
