@@ -20,7 +20,7 @@ It also saves frequently used conversions for easy reference.
 
 ---
 
-## 📂 Project Structure ```text ┌───────────────────────────────┐ │ Engineering-Converter-Unit/ │ ├───────────────────────────────┤ │ 📄 index.html → Main landing page (UI structure) │ │ 🎨 style.css → Styling (bold, modern, colorful) │ │ ⚡ script.js → Conversion logic & history saving │ │ 📘 README.md → Project documentation │ └───────────────────────────────┘
+## 📂 Project Structure | File | Ikon | Fungsi Utama | Penerangan Ringkas | |-------------|------|--------------|--------------------| | `index.html` | 📄 | UI & Struktur | Halaman utama landing page, susun elemen converter | | `style.css` | 🎨 | Rekabentuk | Styling dengan tema bold, modern, colorful engineering | | `script.js` | ⚡ | Logik | Fungsi penukaran unit, input validation & simpan history | | `README.md` | 📘 | Dokumentasi | Panduan projek, cara guna, struktur & maklumat tambahan |
 
 ---
 
