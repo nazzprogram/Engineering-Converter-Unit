@@ -66,8 +66,11 @@ Professional Look : Clean layout, responsive design, and intuitive interface.
 Colorful Engineering Theme : Yellow highlights, cyan results, and gradient backgrounds.
 
 ---
+👨‍💻 Author
+Nazirul Nazmi bin Mohd Sabri            (B132510206)
+Muhammad Nor Hidayat bin Bakhori        (B132510198)
+Muhammad Sazwan Arif bin Mohd Sainusi   (B132510185)
 
-Author
-Nazirul
 
 GitHub: nazzprogram (github.com in Bing)
+
