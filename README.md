@@ -69,7 +69,9 @@ Colorful Engineering Theme : Yellow highlights, cyan results, and gradient backg
 👨‍💻 Author
 
 Nazirul Nazmi bin Mohd Sabri            (B132510206)
+
 Muhammad Nor Hidayat bin Bakhori        (B132510198)
+
 Muhammad Sazwan Arif bin Mohd Sainusi   (B132510185)
 
 
