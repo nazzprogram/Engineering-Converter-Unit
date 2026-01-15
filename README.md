@@ -29,9 +29,6 @@ It also saves frequently used conversions for easy reference.
 
 ---
 
-
----
-
 ## 🛠️ Technologies Used
 - **HTML5** – structure of the page
 - **CSS3** – modern engineering design with bold colors
@@ -47,7 +44,8 @@ It also saves frequently used conversions for easy reference.
 
 ---
 
-Example Conversions
+## 🔮Example Conversions
+
 Add more unit categories (Energy, Force, Mass, Lenght, Temperature)
 
 Export conversion history to CSV/JSON
