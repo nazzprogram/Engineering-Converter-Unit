@@ -9,7 +9,10 @@ const historyList = document.getElementById("historyList");
 const units = {
   length: ["meters", "kilometers", "miles", "feet"],
   mass: ["grams", "kilograms", "pounds", "ounces"],
-  temperature: ["celsius", "fahrenheit", "kelvin"]
+  temperature: ["celsius", "fahrenheit", "kelvin"],
+  power: ["watt", "kilowatt", "horsepower"],
+  volume: ["liters", "milliliters", "cubic_meters", "gallons"],
+  force: ["newton", "kilonewton", "pound_force"]
 };
 
 function populateUnits(type) {
@@ -51,6 +54,18 @@ function convert(value, from, to, type) {
       if (to === "fahrenheit") return (value - 273.15) * 9/5 + 32;
     }
   }
+  if (type === "power") {
+    const factors = { watt: 1, kilowatt: 1000, horsepower: 745.7 };
+    return value * (factors[from] / factors[to]);
+  }
+  if (type === "volume") {
+    const factors = { liters: 1, milliliters: 0.001, cubic_meters: 1000, gallons: 3.785 };
+    return value * (factors[from] / factors[to]);
+  }
+  if (type === "force") {
+    const factors = { newton: 1, kilonewton: 1000, pound_force: 4.448 };
+    return value * (factors[from] / factors[to]);
+  }
   return null;
 }
 
@@ -78,5 +93,4 @@ convertBtn.addEventListener("click", () => {
   li.textContent = output;
   historyList.appendChild(li);
 });
-
 
