@@ -44,6 +44,19 @@ It also saves frequently used conversions for easy reference.
 1. Clone the repository:
    ```bash
    git clone https://github.com/nazzprogram/Engineering-Converter-Unit.git
+
+---
+
+Example Conversions
+Add more unit categories (Energy, Force, Mass, Lenght, Temperature)
+
+Export conversion history to CSV/JSON
+
+Dark/Light mode toggle
+
+Mobile-first optimization
+
+
 ---
 
 Design Concept
