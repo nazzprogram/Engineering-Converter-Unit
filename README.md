@@ -20,12 +20,7 @@ It also saves frequently used conversions for easy reference.
 
 ---
 
-## 📂 Project Structure
-│── index.html # Main landing page │── style.cssEngineering-Converter-Unit/ 
-│── index.html        # Main landing page 
-│── style.css        │── script.js# Styling (bold, modern, colorful) 
-│── script.js        │── README.md # Project documentation# Conversion logic & history saving 
-│── README.md         # Project documentation
+## 📂 Project Structure ```text ┌───────────────────────────────┐ │ Engineering-Converter-Unit/ │ ├───────────────────────────────┤ │ 📄 index.html → Main landing page (UI structure) │ │ 🎨 style.css → Styling (bold, modern, colorful) │ │ ⚡ script.js → Conversion logic & history saving │ │ 📘 README.md → Project documentation │ └───────────────────────────────┘
 
 ---
 
