@@ -15,11 +15,9 @@ const units = {
 function populateUnits(type) {
   fromUnit.innerHTML = "";
   toUnit.innerHTML = "";
-  units[type].forEach(u => {
-    let option1 = new Option(u, u);
-    let option2 = new Option(u, u);
-    fromUnit.add(option1);
-    toUnit.add(option2);
+  units[type].forEach(unit => {
+    fromUnit.add(new Option(unit, unit));
+    toUnit.add(new Option(unit, unit));
   });
 }
 
@@ -39,14 +37,21 @@ function convert(value, from, to, type) {
     return value * (factors[from] / factors[to]);
   }
   if (type === "temperature") {
-    if (from === "celsius" && to === "fahrenheit") return (value * 9/5) + 32;
-    if (from === "fahrenheit" && to === "celsius") return (value - 32) * 5/9;
-    if (from === "celsius" && to === "kelvin") return value + 273.15;
-    if (from === "kelvin" && to === "celsius") return value - 273.15;
-    if (from === "fahrenheit" && to === "kelvin") return (value - 32) * 5/9 + 273.15;
-    if (from === "kelvin" && to === "fahrenheit") return (value - 273.15) * 9/5 + 32;
-    return value;
+    if (from === to) return value;
+    if (from === "celsius") {
+      if (to === "fahrenheit") return (value * 9/5) + 32;
+      if (to === "kelvin") return value + 273.15;
+    }
+    if (from === "fahrenheit") {
+      if (to === "celsius") return (value - 32) * 5/9;
+      if (to === "kelvin") return (value - 32) * 5/9 + 273.15;
+    }
+    if (from === "kelvin") {
+      if (to === "celsius") return value - 273.15;
+      if (to === "fahrenheit") return (value - 273.15) * 9/5 + 32;
+    }
   }
+  return null;
 }
 
 convertBtn.addEventListener("click", () => {
@@ -55,11 +60,23 @@ convertBtn.addEventListener("click", () => {
     result.textContent = "⚠️ Please enter a valid number.";
     return;
   }
-  const res = convert(val, fromUnit.value, toUnit.value, conversionType.value);
-  result.textContent = `${val} ${fromUnit.value} = ${res.toFixed(2)} ${toUnit.value}`;
 
-  // Save to history
+  const type = conversionType.value;
+  const from = fromUnit.value;
+  const to = toUnit.value;
+  const res = convert(val, from, to, type);
+
+  if (res === null) {
+    result.textContent = "⚠️ Conversion not supported.";
+    return;
+  }
+
+  const output = `${val} ${from} = ${res.toFixed(2)} ${to}`;
+  result.textContent = output;
+
   const li = document.createElement("li");
-  li.textContent = result.textContent;
+  li.textContent = output;
   historyList.appendChild(li);
 });
+
+
