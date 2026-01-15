@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Engineering Converter Unit</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>⚙️ Engineering Converter Unit</h1>
-    <p>Convert Length, Mass, and Temperature with ease</p>
+    <p>Convert Length, Mass, and Temperature with Precision</p>
   </header>
 
   <main>
     <section class="converter">
-      <label for="conversionType">Select Conversion Type:</label>
+      <label for="conversionType">Conversion Type:</label>
       <select id="conversionType">
         <option value="length">Length</option>
         <option value="mass">Mass</option>
@@ -22,7 +22,7 @@
       </select>
 
       <div class="input-group">
-        <input type="number" id="inputValue" placeholder="Enter value">
+        <input type="number" id="inputValue" placeholder="Enter value" />
         <select id="fromUnit"></select>
         <span>→</span>
         <select id="toUnit"></select>
@@ -39,9 +39,11 @@
   </main>
 
   <footer>
-    <p>Designed with ❤️ for Engineers</p>
+    <p>Made for Engineers • Malaysia 🇲🇾</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
+
